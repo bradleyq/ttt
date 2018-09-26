@@ -1,4 +1,5 @@
-se 1: Getting Started
+# TicTacToe
+## Phase 1: Getting Started
 You will be building an interactive Tic Tac Toe game in Java using the Swing and awt libraries. The final product should looks something like this:
 
 Get oriented with the starter code. 
@@ -103,6 +104,5 @@ By the end of this phase, you should be able to:
 5. Animations! Each turn has a drawing animation.
 6. Compiled .jar .app .exe that can run on any device.
 7. Make a basic AI to play against. There is a reason why `takeTurn()` is public!
-
 
 
