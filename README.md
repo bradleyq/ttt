@@ -2,7 +2,7 @@
 ## Phase 1: Getting Started
 You will be building an interactive Tic Tac Toe game in Java using the Swing and awt libraries. The final product should looks something like this:
 ![Image 1](images/1.png)
-Get oriented with the starter code. 
+Get oriented with the starter code.
 * `Game.java` is your main game class. It should contain all of the game logic and manage the creation and destruction of graphics `Element`s. Ideally, however, it will not contain any drawing code itself. Key features to include:
     - An instance of GameGraphics
     - A 2D array of the game state
@@ -24,6 +24,8 @@ By the end of this phase, you should be able to:
 * Recieve clicks in the window
 * Access the position clicked in the window
 * Non-resizable window
+
+![Image 2](images/2.png)
 
 ##### Potentially Helpful classes:
 - `javax.swing.JFrame`
@@ -55,6 +57,8 @@ By the end of this phase, you should be able to:
 - Draw text-boxes
 - Make sure that Xs, Os and text-boxes all scale with respect to starting window size
 
+![Image 3](images/3.png)
+
 ##### Hints:
 - When debugging, the origin of `JFrame`, unintuitively, is in the top left where positive `y` is down and positive `x` is to the right.
 - It might be helpful to set up a basic turn system in `Game` so that you can test both drawing X and O.
@@ -71,11 +75,13 @@ By the end of this phase, you should be able to:
 - Click anywhere on the grid and have an X/O appear in the center of that grid spot.
 - Note that both an X and O can be in the same grid spot. This is intended for now.
 
+![Image 4](images/4.png)
+
 ##### Hints:
 - A good way to find the index of the clicked point is to find what fraction of the screen a given position `x` is in. Notice that if we round the fraction down to the nearest `(1/n)` where `n` is the number of grid spaces, then the numerator is the index we are searching for.
 
 ## Phase 4: Game Logic!!!!
-Work in `Game.java`. Time to do game logic! I highly recommend against using `Element`s in your game logic. Good practice is the keep a strict separation between rendering and game logic. The last thing you want is changes in graphics to affect how the game actually plays. 
+Work in `Game.java`. Time to do game logic! I highly recommend against using `Element`s in your game logic. Good practice is the keep a strict separation between rendering and game logic. The last thing you want is changes in graphics to affect how the game actually plays.
 
 Begin by, If you haven't already, creating a turn system to alternate the type of marker drawn. Be sure to use `takeTurn()`!
 
@@ -84,11 +90,13 @@ Next, you want to maintain a game state. At the moment, you should notice that e
 Now you can modify `takeTurn()` to check for whether the grid spot is already occupied. If it is, simply do nothing. This is where the `getIndex()` method will come in handy!
 
 After every turn, you now need to check if someone has won the game. This is an algorithms problem. Think about how we can smartly choose the values representing X and O so that we can easily check for a win. You will still need to write a nested `for` loop.
-![Image 1](images/1.png)
+
 When there is a win or tie, we want a text-box to appear to say who wins. Now you can test your text-box implementation. The box should be centered with readable text. The text does not need to be centered. Clicking the game after a win or tie will reset the game fully and be ready for another round.
 
 By the end of this phase, you should be able to:
 - Have a functional Tic Tac Toe game!!!!!
+
+![Image 1](images/1.png)
 
 ##### Hints:
 - To check for win, one can select X and O so that when the sum of a row, column, or major diagonal is a certain value, not only know that a player won, but also which player did so.
@@ -105,4 +113,4 @@ By the end of this phase, you should be able to:
 6. Compiled .jar .app .exe that can run on any device.
 7. Make a basic AI to play against. There is a reason why `takeTurn()` is public!
 
-
+![Image 1](images/5.png)
