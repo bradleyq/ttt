@@ -1,7 +1,7 @@
 # TicTacToe
 ## Phase 1: Getting Started
 You will be building an interactive Tic Tac Toe game in Java using the Swing and awt libraries. The final product should looks something like this:
-
+![Image 1](images/1.png)
 Get oriented with the starter code. 
 * `Game.java` is your main game class. It should contain all of the game logic and manage the creation and destruction of graphics `Element`s. Ideally, however, it will not contain any drawing code itself. Key features to include:
     - An instance of GameGraphics
