@@ -1,5 +1,4 @@
-# TicTacToe
-## Phase 1: Getting Started
+se 1: Getting Started
 You will be building an interactive Tic Tac Toe game in Java using the Swing and awt libraries. The final product should looks something like this:
 
 Get oriented with the starter code. 
@@ -84,7 +83,7 @@ Next, you want to maintain a game state. At the moment, you should notice that e
 Now you can modify `takeTurn()` to check for whether the grid spot is already occupied. If it is, simply do nothing. This is where the `getIndex()` method will come in handy!
 
 After every turn, you now need to check if someone has won the game. This is an algorithms problem. Think about how we can smartly choose the values representing X and O so that we can easily check for a win. You will still need to write a nested `for` loop.
-
+![Image 1](images/1.png)
 When there is a win or tie, we want a text-box to appear to say who wins. Now you can test your text-box implementation. The box should be centered with readable text. The text does not need to be centered. Clicking the game after a win or tie will reset the game fully and be ready for another round.
 
 By the end of this phase, you should be able to:
@@ -103,5 +102,7 @@ By the end of this phase, you should be able to:
 4. Multiplayer Tic Tac Toe. Allow for more that 2 players!!!
 5. Animations! Each turn has a drawing animation.
 6. Compiled .jar .app .exe that can run on any device.
+7. Make a basic AI to play against. There is a reason why `takeTurn()` is public!
+
 
 
