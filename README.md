@@ -51,7 +51,7 @@ Work in `graphics` package. You will now implement the necessary graphics elment
 * Draw Xs and Os from the `takeTurn()` method. This will be convenient later in the project.
 
 
-By the end of this phase, you should be able to:i
+By the end of this phase, you should be able to:
 - Have a GameGraphics instance on the window with a MouseListener
 - Draw both X and O centered wherever you click on the screen
 - Draw a grid of adequate size to fit the window
