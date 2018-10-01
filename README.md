@@ -45,13 +45,14 @@ By the end of this phase, you should be able to:
 
 ## Phase 2: Graphics Elements
 Work in `graphics` package. You will now implement the necessary graphics elments for this project. You must be able to draw a grid, X, O, and win/lose/tie messages. There are a number of ways to achieve this, but you will be using a modular approach. Create an element for each element you want to draw. you will have to create a new class for each of these new elements. The details are up to you, but here are some guidelines:
-* The grid element should be able to draw a full grid on a given window regardless of the provided window size. Think about what kind of constructor parameters are required to achieve this. Hint: `Graphics.drawLine()`
-* X and O are very similar. Maybe you can add an intermediate class to represent a game marker? This is just a matter of readability and code style. Hint: `Graphics.drawOval()`, `Graphics.drawLine()`
+* The grid element should be able to draw a full grid on a given window regardless of the provided window size. Think about what kind of constructor parameters are required to achieve this. Method Reference: `Graphics.drawLine()`
+* X and O are very similar. Maybe you can add an intermediate class to represent a game marker? This is just a matter of readability and code style. Method Reference: `Graphics.drawOval()`, `Graphics.drawLine()`
 * A message box can be achieved very easily once you know which methods to use. Some pointers: `Graphics.fillRect()`, `Graphics.setFont()`, `Graphics.drawString()`
 * Draw Xs and Os from the `takeTurn()` method. This will be convenient later in the project.
 
 
-By the end of this phase, you should be able to:
+By the end of this phase, you should be able to:i
+- Have a GameGraphics instance on the window with a MouseListener
 - Draw both X and O centered wherever you click on the screen
 - Draw a grid of adequate size to fit the window
 - Draw text-boxes
@@ -67,7 +68,7 @@ By the end of this phase, you should be able to:
 - Make sure you call `Canvas.repaint()` somewhere in your code in order to actually update the graphics window. Adding graphics elements does not automatically refresh the window in the starter code.
 
 ## Phase 3: Grid Alignment.
-Work in `Game.java`. In this phase, you will be implementing alignment of drawings to the grid. As you should have noticed, right now you can draw an X or O anywhere on the screen. This is not idea. We want the Xs and Os to be centered on their grid spots. This is just a bit of math. For reference, look at the provided helper methods in `Game` class.
+Work in `Game.java`. In this phase, you will be implementing alignment of drawings to the grid. As you should have noticed, right now you can draw an X or O anywhere on the screen. This is not ideal. We want the Xs and Os to be centered on their grid spots. This is just a bit of math. For reference, look at the provided helper methods in `Game` class.
 
 Like much of the rest of this project, there are many ways to achieve this. The simplest, however, is to write a method to find the closest grid center. For me it was in `getIndex` which takes in one pixel coordinate value and finds the corresponding index in the grid. Then, I can easily find the center of the desired marker by doing `pos = d/2 + index * d` where `d` is the size of the gap between grid lines in pixels.
 
